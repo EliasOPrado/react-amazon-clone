@@ -8,11 +8,18 @@ function App() {
   return (
     < Router>
     <div className="App">
-      <Header/>
-      <Home />
+      <Switch>
+      <Route path="/checkout">
+        <Header/>
+        <h1>I am the checkout</h1>
+      </Route>
+      <Route path="/">
+        <Header/>
+        <Home />
+      </Route>
+      </Switch>
     </div>
     </Router> 
-   
   );
 }
 
